@@ -1,0 +1,219 @@
+body {
+    background-color: rgb(128, 64, 187);
+    color: white;
+    margin: 15px;
+    font-family: 'Libre Baskerville', serif;
+}
+
+/* NavBar*/
+h1 {
+    text-shadow: black -2px -3px;
+}
+
+hr {
+    clear: both;
+
+}
+
+#bureaugamerz {
+    width: 700px;
+}
+
+#image_manette {
+    float: left;
+    margin-bottom: 15px;
+}
+
+#image_mannette01 {
+    width: 30%;
+    float: left;
+}
+
+h1 {
+    float: left;
+    font-size: 2.5em;
+    margin-top: 80px;
+    margin-left: 20px;
+}
+
+#banniere_top {
+    float: right;
+    width: 400px;
+}
+
+#icone_avatar {
+    width: 20%;
+    float: left;
+    margin-top: 10px;
+}
+
+#status_client {
+    float: left;
+    padding-left: 30px;
+    margin-bottom: 5px;
+}
+
+#status_client p {
+    text-shadow: black 3px 4px 4px;
+}
+
+nav {
+    width: 700px;
+    text-align: center;
+    margin: auto;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+    width: 20%;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgb(191, 198, 195) 0%, rgb(119, 188, 181) 52%, rgb(33, 159, 147) 100%);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+}
+
+/* Photo Bureau Gamerz*/
+#bureaugamerz {
+    width: 30%;
+    float: left;
+    margin-bottom: 15px;
+
+}
+
+#titrephoto h2 {
+    float: left;
+    margin-left: 15px;
+    margin-top: 5px;
+
+}
+
+/* Carte à Puces*/
+#list {
+    display: flex;
+}
+
+#deuxieme_list {
+    margin-left: 20%;
+}
+
+#image_inscription {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 400px;
+
+    text-align: center;
+    margin: auto;
+}
+
+#image_néon {
+    width: 400px;
+    margin: auto;
+}
+
+#formulaire1 {
+    display: flex;
+    width: 700px;
+    height: 700px;
+    background-color: rgb(255, 204, 0);
+    margin: auto;
+    padding: 10px;
+    border-radius: 2%;
+    box-shadow: 5px 5px 10px 0px cyan;
+    color: black;
+
+}
+
+/*banniere mon compte*/
+
+#banniere_mon_compte {
+    display: flex;
+    background-color: rgb(57, 125, 171);
+    padding-left: 15px;
+    margin: 2%;
+    width: 90%;
+    height: 60px;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    align-items: center;
+    margin-top: 30px;
+}
+
+#h2_form {
+    color: white;
+}
+
+#h3information {
+    margin-bottom: 0px;
+    color: black;
+}
+/*le début du formulaire à remplir*/
+#idDivForm1 {
+    display: flex;
+    background-color: aqua;
+    text-align: right;
+    margin-bottom: 10px;
+    margin-right: 40px;
+    margin-left: 50px;
+}
+.label{
+    text-align: right;
+}
+#idDivForm2 {
+    display: flex;
+    background-color: aqua;
+    text-align: right;
+    margin-bottom: 10px;
+    margin-right: 40px;
+    margin-left: 50px;
+
+}
+
+#idDivForm3 {
+    display: flex;
+    background-color: aqua;
+    justify-content: space-evenly;
+    text-align: right;
+    margin-bottom: 10px;
+
+}
+
+#idDivForm4 {
+    display: flex;
+    background-color: aqua;
+    text-align: right;
+    margin-bottom: 10px;
+
+}
+
+td{
+    border: 1px solid rgb(57, 125, 171);
+    text-align: center;
+    width: 150px;
+}
+#bouton_valider_annuler{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 30px;
+
+    
+}
+#bouton_valider{
+    margin-left: 15px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
+
+#bouton_annuler{
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
