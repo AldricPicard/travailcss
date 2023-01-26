@@ -119,8 +119,8 @@ nav ul li a {
 
 #formulaire1 {
     display: flex;
-    width: 700px;
-    height: 700px;
+    width: 750px;
+    height: 800px;
     background-color: rgb(255, 204, 0);
     margin: auto;
     padding: 10px;
@@ -130,21 +130,39 @@ nav ul li a {
 
 }
 
-/*banniere mon compte*/
-
-#banniere_mon_compte {
+#formulaire_inscription_mon_compte {
     display: flex;
-    background-color: rgb(57, 125, 171);
-    padding-left: 15px;
-    margin: 2%;
-    width: 90%;
-    height: 60px;
-    border-radius: 10px;
-    border: 2px solid rgb(0, 0, 0);
+
     align-items: center;
-    margin-top: 30px;
+    align-content: center;
+    width: 700px;
+    height: 300px;
 }
 
+input:invalid {
+    background: rgb(255, 0, 0);
+}
+input:valid {
+    background: rgb(1, 255, 26);
+}
+
+
+.label {
+    text-align: right;
+    margin: 3px;
+    justify-content: flex-end;
+}
+
+.input {
+    justify-content: left;
+
+}
+
+.label_form {
+    margin-bottom: 15px;
+}
+
+/* fin formulaire */
 #h2_form {
     color: white;
 }
@@ -153,7 +171,8 @@ nav ul li a {
     margin-bottom: 0px;
     color: black;
 }
-/*le début du formulaire à remplir*/
+
+/**/
 #idDivForm1 {
     display: flex;
     background-color: aqua;
@@ -162,9 +181,12 @@ nav ul li a {
     margin-right: 40px;
     margin-left: 50px;
 }
-.label{
+
+.label {
     text-align: right;
 }
+
+/*  */
 #idDivForm2 {
     display: flex;
     background-color: aqua;
@@ -192,28 +214,42 @@ nav ul li a {
 
 }
 
-td{
+td {
     border: 1px solid rgb(57, 125, 171);
     text-align: center;
     width: 150px;
 }
-#bouton_valider_annuler{
+
+#bouton_valider_annuler {
     display: flex;
     justify-content: center;
 
     margin-top: 30px;
 
-    
+
 }
-#bouton_valider{
+
+#bouton_valider {
     margin-left: 15px;
     color: white;
     background-color: black;
     border-radius: 5px;
 }
 
-#bouton_annuler{
+#bouton_annuler {
     color: white;
     background-color: black;
     border-radius: 5px;
+}
+
+#bouton_annuler:hover {
+    border: 2px solid rgb(251, 251, 251);
+    background-color: brown;
+
+}
+
+#bouton_valider:hover {
+    border: 2px solid rgb(255, 255, 255);
+    background-color: brown;
+
 }

@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="/Exercice Gamerz/media/images/logo-gamerz.png" type="image/x-icon/png">
-    <title>inscription</title>
+    <title>Gamerz inscription</title>
 </head>
 
 <body>
@@ -54,142 +54,109 @@
                 <img src="/Exercice Gamerz/media/images/img-list-gamerz.png" alt="image_burau_néon" id="image_néon">
             </div>
             <hr class="formlairehr">
-            <form action="traitement.php" method="post" name="Monformulaire" id="formulaire1">
+             <form action="traitement.php" method="post" name="Monformulaire" id="formulaire1">
                 <div>
                     <div>
                         <div id="banniere_mon_compte">
                             <h2 id="h2_form">Mon compte</h2>
                         </div>
-                            <legend>Vos informations personnelles</legend>
-                            <hr>
-                            <div id="idDivForm1" class="idDivForm">
+                        <legend>Vos informations personnelles</legend>
+                        <hr>
+                        <div>
+                            <div id="formulaire_inscription_mon_compte">
                                 <div class="label">
-                                    <label for="nom">Nom :</label>
+                                    <div class="label_form"><label for="nom">nom :</label></div>
+                                    <div class="label_form"><label for="prenom">prenom :</label></div>
+                                    <div class="label_form"><label for="email">Email :</label></div>
+                                    <div class="label_form"><label for="motdepasse">Mot de passe :</label></div>
                                 </div>
-                                <div>
-                                    <input type="text" name="nom" id="nom">
+                                <div class="input">
+                                    <div class="label_form"><input type="text" name="nom" id="nom" autofocus></div>
+                                    <div class="label_form"><input type="text" name="prenom" id="prenom"></div>
+                                    <div class="label_form"><input type="email" name="email" id="email"></div>
+                                    <div class="label_form"><input type="password" name="motdepasse" id="motdepasse"></div>
                                 </div>
                                 <div class="label">
-                                    <label for="naissanceDate">Date de naissance :</label>
+                                    <div class="label_form"><label for="datedenaissance">Date de naissance :</label></div>
+                                    <div class="label_form"><label for="jeuPref">Jeux préféré :</label></div>
+                                    <div class="label_form"><label for="telephone">Téléphone :</label></div>
+                                    <div class="label_form"><label for="repetelemdp">Répétez le mot de passe :</label></div>
                                 </div>
-                                <div class="">
-                                    <input type="date" name="DateNaissance" id="naissanceDate">
-                                </div>
+                                <div class="input">
+                                    <div class="label_form"><input type="date" name="datedenaissance" id="datedenaissance"></div>
+                                    <div class="label_form"><select name="Jeu" id="jeuPref">
+                                            <optgroup label="Plate-forme">
+                                                <option value="mario">Mario</option>
+                                                <option value="Rayman">Rayman</option>
+                                                <option value="MineCraft">Minecraft</option>
+                                            </optgroup>
+                                            <optgroup label="FPS">
+                                                <option value="CS">Counter Strike</option>
+                                                <option value="Overwatch">Overwatch</option>
+                                            </optgroup>
+                                        </select></div>
+                                    <div class="label_form"><input type="tel" name="telephone" id="telephone"></div>
+                                    <div class="label_form"><input type="password" name="motdepasse" id="motdepasse"></div>
                             </div>
-                            <div id="idDivForm2" class="idDivForm">
-                                <div>
-                                    <label for="prenom">Prénom :</label>
-                                </div>
-                                <div>
-                                    <input type="text" name="prenom" id="prenom">
-                                </div>
-                                <div>
-                                    <label for="jeuPref">Jeu préféré :</label>
-                                </div>
-                                <div>
-                                    <select name="Jeu" id="jeuPref">
-                                        <optgroup label="Plate-forme">
-                                            <option value="mario">Mario</option>
-                                            <option value="Rayman">Rayman</option>
-                                            <option value="MineCraft">Minecraft</option>
-                                        </optgroup>
-                                        <optgroup label="FPS">
-                                            <option value="CS">Counter Strike</option>
-                                            <option value="Overwatch">Overwatch</option>
-                                        </optgroup>
-                                    </select>
-                                </div> 
-                            </div>
-                            <div id="idDivForm3" class="idDivForm">
-                                <div>
-                                    <label for="email">Email :</label>
-                                </div>
-                                <div>
-                                    <input type="email" name="email" id="email">
-                                </div>
-                                <div>
-                                    <label for="tel">Téléphone :</label>
-                                </div>
-                                <div>
-                                    <input type="tel" name="tel" id="tel">
-                                </div>
-                            </div>
-                            <div id="idDivForm4" class="idDivForm">
-                                <div>
-                                    <label for="mdp">Mot de passe :</label>
-                                </div>
-                                <div>
-                                    <input type="password" name="mdp" id="mdp">
-                                </div>
-                                <div>
-                                    <label for="Rmdp">Répéter le mot de passe :</label>
-                                </div>
-                                <div>
-                                    <input type="password" name="Rmdp" id="Rmdp">
-                                </div>
-                            </div>
-                    </div>
-
-                    <legend>Votre formule abonnement</legend>
-                    <hr>
-                    <table>
-                    
-                    
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th><input type="radio" name="abonnement" id="gameone"><label
-                                        for="gameone">GameOne</label>
-                                </th>
-                                <th><input type="radio" name="abonnement" id="gametwo"><label
-                                        for="gametwo">GamerTwo</label>
-                                </th>
-                                <th><input type="radio" name="abonnement" id="gamerzfree"><label
-                                        for="gamerzfree">GamerFree</label></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>Accès aux résultats</th>
-                                <td><img src="/Exercice Gamerz/media/images/icon-ok-32x32.png" alt="logo ok"></td>
-                                <td><img src="/Exercice Gamerz/media/images/icon-ok-32x32.png" alt="logo ok"></td>
-                                <td><img src="/Exercice Gamerz/media/images/icon-ok-32x32.png" alt="logo ok"></td>
-                            </tr>
-                            <tr>
-                                <th>Accès aux Gamerz</th>
-                                <td><img src="/Exercice Gamerz/media/images/icon-ok-32x32.png" alt="logo ok">
-                                <td><img src="/Exercice Gamerz/media/images/icon-ok-32x32.png" alt=""></td>
-                                <td><img src="/Exercice Gamerz/media/images/icon-not-ok-32x32.png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <th>Créer du contenu</th>
-                                <td><img src="/Exercice Gamerz/media/images/icon-ok-32x32.png" alt="logo ok"></td>
-                                <td><img src="/Exercice Gamerz/media/images/icon-not-ok-32x32.png" alt=""></td>
-                                <td><img src="/Exercice Gamerz/media/images/icon-not-ok-32x32.png" alt=""></td>
-                            </tr>
-                            <tr>
-                                <th>Tarifs</th>
-                                <td>9.99€/mois</td>
-                                <td>5.99€/mois</td>
-                                <td>Free 1 mois</td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <th></td>
-                                <th><input type="checkbox" name="nosnewsletters" id="newsletters1"><label
-                                        for="newsletters1">Recevoir nos newsletters</label></td>
-                                <th colspan="2"><input type="checkbox" name="newsletterspartenaires"
-                                        id="newsletters2"><label for="newsletters2">Recevoir mes
-                                        newslestters de nos partenaires</label></td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                    <div id="bouton_valider_annuler">
-                        <div ><input type="reset" id="bouton_annuler"  value="Annuler"></div>
-                        <div ><input type="submit" id="bouton_valider"  value="Valider"></div>
-                    </div>
-                </div>
+                        </div>  
+            
+            <legend>Votre formule abonnement</legend>
+            <hr>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th><input type="radio" name="abonnement" id="gameone"><label for="gameone">GameOne</label>
+                        </th>
+                        <th><input type="radio" name="abonnement" id="gametwo"><label for="gametwo">GamerTwo</label>
+                        </th>
+                        <th><input type="radio" name="abonnement" id="gamerzfree"><label
+                                for="gamerzfree">GamerFree</label></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Accès aux résultats</th>
+                        <td><img src="/Exercice Gamerz/media/images/icon-ok-32x32.png" alt="logo ok"></td>
+                        <td><img src="/Exercice Gamerz/media/images/icon-ok-32x32.png" alt="logo ok"></td>
+                        <td><img src="/Exercice Gamerz/media/images/icon-ok-32x32.png" alt="logo ok"></td>
+                    </tr>
+                    <tr>
+                        <th>Accès aux Gamerz</th>
+                        <td><img src="/Exercice Gamerz/media/images/icon-ok-32x32.png" alt="logo ok">
+                        <td><img src="/Exercice Gamerz/media/images/icon-ok-32x32.png" alt=""></td>
+                        <td><img src="/Exercice Gamerz/media/images/icon-not-ok-32x32.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <th>Créer du contenu</th>
+                        <td><img src="/Exercice Gamerz/media/images/icon-ok-32x32.png" alt="logo ok"></td>
+                        <td><img src="/Exercice Gamerz/media/images/icon-not-ok-32x32.png" alt=""></td>
+                        <td><img src="/Exercice Gamerz/media/images/icon-not-ok-32x32.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <th>Tarifs</th>
+                        <td>9.99€/mois</td>
+                        <td>5.99€/mois</td>
+                        <td>Free 1 mois</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>
+                            </td>
+                        <th><input type="checkbox" name="nosnewsletters" id="newsletters1"><label
+                                for="newsletters1">Recevoir nos newsletters</label></td>
+                        <th colspan="2"><input type="checkbox" name="newsletterspartenaires" id="newsletters2"><label
+                                for="newsletters2">Recevoir mes
+                                newslestters de nos partenaires</label></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div id="bouton_valider_annuler">
+                <div><input type="reset" id="bouton_annuler" value="Annuler"></div>
+                <div><input type="submit" id="bouton_valider" value="Valider" ></div>
+            </div>
+            </div>
             </form>
         </section>
     </main>
